@@ -2,7 +2,7 @@
   "name": "ag-js-utils",
   "displayName": "Ag Liu`s JS Utils",
   "description": "common js utils",
-  "private": true,
+  "private": false,
   "author": {
     "email": "i-am-ag@foxmail.com",
     "name": "Ag Liu",
