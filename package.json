@@ -9,13 +9,13 @@
     "url": "https://github.com/Ag0v0"
   },
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "keywords": [
     "js",
     "utils"
   ],
-  "main": "/dist/index.umd.js",
+  "main": "./dist/index.js",
   "repository": {
     "type": "github",
     "url": "https://github.com/Ag0v0/ag-js-utils.git"
