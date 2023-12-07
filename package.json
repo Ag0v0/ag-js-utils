@@ -1,0 +1,40 @@
+{
+  "name": "ag-js-utils",
+  "displayName": "Ag Liu`s JS Utils",
+  "description": "common js utils",
+  "private": true,
+  "author": {
+    "email": "i-am-ag@foxmail.com",
+    "name": "Ag Liu",
+    "url": "https://github.com/Ag0v0"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "type": "module",
+  "keywords": [
+    "js",
+    "utils"
+  ],
+  "main": "/dist/index.umd.js",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Ag0v0/ag-js-utils.git"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/big.js": "^6.2.2",
+    "big.js": "^6.2.1",
+    "dayjs": "^1.11.10"
+  }
+}
