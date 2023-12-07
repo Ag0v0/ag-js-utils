@@ -19,5 +19,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "package/index.ts", "package/lib"]
+  "include": ["src", "package/index.js", "package/lib"]
 }

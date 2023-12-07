@@ -31,8 +31,8 @@ export function sleepFn(delay: number = 1000): Promise<void> {
  * @param {String} dataUrl base64数据 data:image/jpeg;base64,xxxx|data:application/pdf;base64,xxxx
  * @param {String} title 标签名
  */
-export function reviewInNewTab(type: "image" | "pdf", dataUrl: string, title: string = "文件预览"): void {
-  const newWin = window.open(dataUrl, "_blank");
+export function previewInNewTab(type: "image" | "pdf", dataUrl: string, title: string = "文件预览"): void {
+  const newWin = window.open(dataUrl, "_blank", "width=1024,height=768,left=50,top=50");
   if (!newWin) return;
 
   if (type === "image") {
@@ -203,4 +203,18 @@ export function createFormdata(data: Record<string, any> = {}): FormData {
     }
   }
   return form;
+}
+
+/**
+ * arraybuff 转 base64
+ * @param buffer
+ * @returns
+ */
+export function arrayBufferToBase64(buffer: Iterable<number>): string {
+  var binary = "";
+  var bytes = new Uint8Array(buffer);
+  for (var len = bytes.byteLength, i = 0; i < len; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return window.btoa(binary);
 }

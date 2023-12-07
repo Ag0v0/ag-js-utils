@@ -13,7 +13,7 @@ export default defineConfig({
     /** 分包大小 */
     chunkSizeWarningLimit: 800,
     lib: {
-      entry: fileURLToPath(new URL("./package/index.ts", import.meta.url)), //指定组件编译入口文件
+      entry: fileURLToPath(new URL("./package/index.js", import.meta.url)), //指定组件编译入口文件
       name: "js-utils",
       fileName: "index",
     }, //库编译模式配置
